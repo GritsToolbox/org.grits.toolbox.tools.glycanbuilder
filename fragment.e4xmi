@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="ASCII"?>
+<fragment:ModelFragments xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/descriptor/basic" xmlns:commands="http://www.eclipse.org/ui/2010/UIModel/application/commands" xmlns:fragment="http://www.eclipse.org/ui/2010/UIModel/fragment" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_JL5UQDFiEemUScOzPi9PYg">
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_An20IDUnEemUScOzPi9PYg" featurename="commands" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Command" xmi:id="_M7w1wDUnEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder.command.open" commandName="Open GlycanBuilder part"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_bOeGYDUnEemUScOzPi9PYg" featurename="handlers" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="commands:Handler" xmi:id="_gFh78DUnEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder.handler.open" contributionURI="bundleclass://org.grits.toolbox.tools.glycanbuilder/org.grits.toolbox.tools.glycanbuilder.handler.OpenGlycanBuilder" command="_M7w1wDUnEemUScOzPi9PYg"/>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_ufE0YDUnEemUScOzPi9PYg" featurename="descriptors" parentElementId="org.grits.toolbox.core.application">
+    <elements xsi:type="basic:PartDescriptor" xmi:id="_3sSx4DUnEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder" label="GlycanBuilder" iconURI="platform:/plugin/org.grits.toolbox.tools.glycanbuilder/icons/logo.png" tooltip="GlycanBuilder" closeable="true" contributionURI="bundleclass://org.grits.toolbox.tools.glycanbuilder/org.grits.toolbox.tools.glycanbuilder.partdescriptor.GlycanBuilderPart">
+      <tags>default</tags>
+      <toolbar xmi:id="_rZFtUDVHEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder.toolbar.0"/>
+    </elements>
+  </fragments>
+  <fragments xsi:type="fragment:StringModelFragment" xmi:id="_KiSngDUoEemUScOzPi9PYg" featurename="children" parentElementId="org.grits.toolbox.core.menu.main.plugins">
+    <elements xsi:type="menu:Menu" xmi:id="_36eiYDUoEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder.menu.glycanbuilder" label="GlycanBuilder" iconURI="platform:/plugin/org.grits.toolbox.tools.glycanbuilder/icons/logo.png">
+      <children xsi:type="menu:HandledMenuItem" xmi:id="_9qc88DUoEemUScOzPi9PYg" elementId="org.grits.toolbox.tools.glycanbuilder.handledmenuitem.open" label="Open GlycanBuilder" tooltip="Open GlycanBuilder" command="_M7w1wDUnEemUScOzPi9PYg"/>
+    </elements>
+  </fragments>
+</fragment:ModelFragments>
